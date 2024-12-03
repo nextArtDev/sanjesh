@@ -35,13 +35,15 @@ function CustomBtn({ open, setOpen }: Props) {
                   open ? "d: 'M 3 16.5 L 17 2.5'" : " d: 'M 2 2.5 L 20 2.5'"
                 }
                 strokeWidth="3"
-                stroke={open ? 'red' : 'black'}
+                className={'dark:!stroke-white'}
+                stroke={open ? 'red' : 'black '}
                 strokeLinecap="round"
                 d={open ? 'M 3 16.5 L 17 2.5' : 'M 2 2.5 L 20 2.5'}
               />
               <motion.path
                 strokeWidth="3"
-                stroke="black"
+                className={'dark:!stroke-white'}
+                stroke="black "
                 strokeLinecap="round"
                 d="M 2 9.423 L 20 9.423"
                 opacity={open ? 0 : 1}
@@ -49,7 +51,8 @@ function CustomBtn({ open, setOpen }: Props) {
               <motion.path
                 layoutId="line"
                 strokeWidth="3"
-                stroke={open ? 'red' : 'black'}
+                className={'dark:!stroke-white'}
+                stroke={open ? 'red' : 'black '}
                 strokeLinecap="round"
                 d={open ? 'M 3 2.5 L 17 16.346' : 'M 2 16.346 L 20 16.346'}
               />

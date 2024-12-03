@@ -1,17 +1,27 @@
+ 
+    $main-1:light-dark(rgba(255, 255, 255, 0.2),rgba(30, 30, 30, 0.9));
+    $main-2:light-dark(rgba(255, 255, 255, 0.6),rgba(30, 30, 30, 0.8));
+    $main-3:light-dark(rgba(255, 255, 255, 0.8),rgba(30, 30, 30, 0.45));
+    $main-4:light-dark(rgba(255, 255, 255, 0.9),rgba(30, 30, 30, 0.2));
+    $side-1:light-dark(rgba(0, 0, 0, 0.2),rgba(120, 120, 120, 0.2));
+    $side-2:light-dark(rgba(0, 0, 0, 0.4),rgba(120, 120, 120, 0.6));
+    // $side-3:light-dark(rgba(0, 0, 0, 0.45),);
+    $side-3:light-dark(rgba(0, 0, 0, 0.8),rgba(75, 75, 75, 0.8));
+    $side-4:light-dark(rgba(0, 0, 0, 0.9),rgba(120, 120, 120, 0.9));  
 .toggle {
+    
     display: inline-block;
-}
-
-.toggle {
     position: relative;
     // height: 100px;
     // width: 100px;
 }
+    
 
 .toggle:before {
     box-shadow: 0;
     border-radius: 84.5px;
-    background: #fff;
+    // background: #fff;
+    background: var(--background);    
     position: absolute;
     margin-left: -36px;
     margin-top: -36px;
@@ -21,17 +31,15 @@
     left: 50%;
     top: 50%;
 }
-
-.toogle input:checked~.label {
-    color: rgba(255, 0, 0, 0.8);
-}
+// CHANGE
+ 
 
 .toggle .button {
     transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-    box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px -4px $side-2, inset 0 -3px 4px -1px $side-1, 0 -10px 15px -1px $main-2, inset 0 3px 4px -1px $main-1, inset 0 0 5px 1px $main-3, inset 0 20px 30px 0 $main-1;
     border-radius: 68.8px;
     position: absolute;
-    background: #eaeaea;
+    
     margin-left: -34.4px;
     margin-top: -34.4px;
     display: block;
@@ -52,7 +60,7 @@
     opacity: 0.9;
     // height: 100%;
     // width: 100%;
-    color: rgba(0, 0, 0, 0.9);
+    color: $side-4;
 }
 
 .toggle input {
@@ -68,19 +76,19 @@
 
 .toggle input:active~.button {
     filter: blur(0.5px);
-    box-shadow: 0 12px 25px -4px rgba(0, 0, 0, 0.4), inset 0 -8px 30px 1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 25px 0 rgba(0, 0, 0, 0.4), inset 0 0 10px 1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 12px 25px -4px $side-2, inset 0 -8px 30px 1px $main-4, 0 -10px 15px -1px $main-2, inset 0 8px 25px 0 $side-2, inset 0 0 10px 1px $main-2;
 }
 
 .toggle input:active~.label {
     font-size: 26px;
-    color: rgba(0, 0, 0, 0.45);
+    color: $side-2;
 }
 
 .toggle input:checked~.button {
     filter: blur(0.5px);
-    box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.4), inset 0 -8px 25px -1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 20px 0 rgba(0, 0, 0, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 25px -4px $side-2, inset 0 -8px 25px -1px $main-4, 0 -10px 15px -1px $main-2, inset 0 8px 20px 0 $side-1, inset 0 0 5px 1px $main-2;
 }
 
 .toggle input:checked~.label {
-    color: rgba(0, 0, 0, 0.8);
+    color: $side-3;
 }

@@ -59,7 +59,7 @@ const style = {
   menu: {
     open: `h-full w-full `,
     close: `w-full h-0`,
-    default: `overflow-x-hidden md:overflow-hidden transition-all duration-700 fixed z-10 top-0 left-0 bg-background`,
+    default: `overflow-x-hidden md:overflow-hidden transition-all duration-700 fixed z-10 top-0 left-0 bg-background/40 backdrop-blur-md `,
   },
 }
 
