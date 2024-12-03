@@ -1,13 +1,13 @@
  
-    $main-1:light-dark(rgba(255, 255, 255, 0.2),rgba(30, 30, 30, 0.9));
-    $main-2:light-dark(rgba(255, 255, 255, 0.6),rgba(30, 30, 30, 0.8));
-    $main-3:light-dark(rgba(255, 255, 255, 0.8),rgba(30, 30, 30, 0.45));
-    $main-4:light-dark(rgba(255, 255, 255, 0.9),rgba(30, 30, 30, 0.2));
-    $side-1:light-dark(rgba(0, 0, 0, 0.2),rgba(120, 120, 120, 0.2));
-    $side-2:light-dark(rgba(0, 0, 0, 0.4),rgba(120, 120, 120, 0.6));
+    $main-1:light-dark(rgba(255, 255, 255, 0.2),rgba(0, 0, 0, 0.2));
+    $main-2:light-dark(rgba(255, 255, 255, 0.6),rgba(0, 0, 0, 0.4));
+    $main-3:light-dark(rgba(255, 255, 255, 0.8),rgba(0, 0, 0, 0.8));
+    $main-4:light-dark(rgba(255, 255, 255, 0.9),rgba(0, 0, 0, 0.9));
+    $side-1:light-dark(rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0.2));
+    $side-2:light-dark(rgba(0, 0, 0, 0.4),rgba(255, 255, 255, 0.6));
     // $side-3:light-dark(rgba(0, 0, 0, 0.45),);
-    $side-3:light-dark(rgba(0, 0, 0, 0.8),rgba(75, 75, 75, 0.8));
-    $side-4:light-dark(rgba(0, 0, 0, 0.9),rgba(120, 120, 120, 0.9));  
+    $side-3:light-dark(rgba(0, 0, 0, 0.8),rgba(255, 255, 255, 0.8));
+    $side-4:light-dark(rgba(0, 0, 0, 0.9),rgba(255, 255, 255, 0.9));  
 .toggle {
     
     display: inline-block;

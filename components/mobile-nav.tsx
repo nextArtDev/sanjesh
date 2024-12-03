@@ -3,10 +3,13 @@ import { useState } from 'react'
 import { links } from './navbar'
 import { cn } from '@/lib/utils'
 import CustomBtn from './custom-btn/CustomBtn'
+import Link from 'next/link'
+import NavBtn from './nav-btn/navbtn'
+import { usePathname } from 'next/navigation'
 
 export const MobileMenu = () => {
   const [open, setOpen] = useState(false)
-
+  const pathname = usePathname()
   const toggle = () => {
     setOpen((prevState) => !prevState)
   }
@@ -43,7 +46,7 @@ export const MobileMenu = () => {
         <MenuContainer>
           {links.map((link) => (
             <MenuItem key={link.id} href={link.link}>
-              {link.name}
+              <NavBtn isActive={pathname === link.link} title={link.name} />
             </MenuItem>
           ))}
         </MenuContainer>
@@ -92,10 +95,10 @@ function MenuItem({
   href: string
 }) {
   return (
-    <div className="p-2">
-      <a href={href} className={style.item}>
+    <div className="p-2 max-w-sm mx-auto">
+      <Link href={href} className={style.item}>
         {children}
-      </a>
+      </Link>
     </div>
   )
 }
