@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { links } from './navbar'
 import { cn } from '@/lib/utils'
+import CustomBtn from './custom-btn/CustomBtn'
 
 export const MobileMenu = () => {
   const [open, setOpen] = useState(false)
@@ -28,7 +29,7 @@ export const MobileMenu = () => {
           d="M1 1h15M1 7h15M1 13h15"
         />
       </svg> */}
-      <button
+      {/* <button
         onClick={toggle}
         className={cn(
           'z-50 toggle w-10 h-10 rounded-md p-1.5 ',
@@ -36,7 +37,8 @@ export const MobileMenu = () => {
         )}
       >
         <span className="w-8 h-1 origin-center" />
-      </button>
+      </button> */}
+      <CustomBtn open={open} setOpen={setOpen} />
       <Menu open={open}>
         <MenuContainer>
           {links.map((link) => (
@@ -57,7 +59,7 @@ const style = {
   menu: {
     open: `h-full w-full `,
     close: `w-full h-0`,
-    default: `overflow-x-hidden md:overflow-hidden transition-all duration-700 fixed z-10 top-0 left-0 bg-black`,
+    default: `overflow-x-hidden md:overflow-hidden transition-all duration-700 fixed z-10 top-0 left-0 bg-background`,
   },
 }
 
