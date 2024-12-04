@@ -63,12 +63,33 @@ body {
   }
 }
 
+.adad {
+  -moz-font-feature-settings: 'ss02';
+  -webkit-font-feature-settings: 'ss02';
+  font-feature-settings: 'ss02';
+}
+
+.adad {
+  -moz-font-feature-settings: 'ss03';
+  -webkit-font-feature-settings: 'ss03';
+  font-feature-settings: 'ss03';
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .nev-btn {
+    @apply shadow-[inset_4px_4px_6px_-1px_rgba(0,0,0,0.2),inset_-4px_-4px_6px_-1px_rgba(255,255,255,0.7),-0.5px_-0.5px_0px_rgba(255,255,255,1),0.5px_0.5px_0px_rgba(0,0,0,0.15),0px_12px_10px_-10px_rgba(0,0,0,0.05)]  dark:shadow-[4px_4px_6px_-1px_rgba(0,0,0,0.7),-4px_-4px_6px_-1px_rgba(255,255,255,0.1),-0.5px_-1px_0px_rgba(179,255,0,0.8),0.5px_1px_0px_rgba(0,0,0,0.75),0px_12px_10px_-10px_rgba(0,0,0,0.85)];
+  }
+}
+@layer components {
+  .neu-shadow {
+    text-shadow: 2px 2px 4px var(--foreground, #919293),
+      -3px -3px 4px var(--foreground, #919293);
   }
 }
 
