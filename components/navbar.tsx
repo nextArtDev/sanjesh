@@ -23,9 +23,9 @@ function Navbar({}: Props) {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4  ">
           <Link
             href="/"
-            className="order-2 mr-auto relative aspect-square w-12 flex items-center space-x-3 "
+            className="order-2 mr-auto relative aspect-square w-14 flex items-center space-x-3 dark:nev-btn dark:bg-foreground  dark:rounded-md"
           >
-            <Image fill src={logo.src} className=" object-cover" alt="Logo" />
+            <Image fill src={logo.src} className=" object-cover " alt="Logo" />
             {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Flowbite
             </span> */}

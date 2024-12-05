@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSvg from '../texts/HeroSvg'
 import APLogo from '../texts/APLogo'
+import { Sparkles } from '../sparkles/Sparkles'
 
 type Props = {}
 
@@ -14,6 +15,17 @@ function Hero({}: Props) {
           ناحیه یک اهواز
         </h2>
       </article>
+      <div className="relative mt-20 h-80 w-full  overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] before:absolute before:inset-0 dark:before:bg-[radial-gradient(circle_at_bottom_center,#b3ff00,transparent_90%)] before:bg-[radial-gradient(circle_at_bottom_center,#1122ff,transparent_90%)]  before:opacity-40 after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[10%] after:border-t after:border-background after:bg-background">
+        <Sparkles
+          density={800}
+          speed={1.2}
+          size={1.2}
+          direction="top"
+          opacitySpeed={2}
+          color="#b3ff00"
+          className="absolute inset-x-0 bottom-0 h-full w-full "
+        />
+      </div>
     </section>
   )
 }

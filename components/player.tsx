@@ -3,6 +3,8 @@ import React from 'react'
 import Profile from '../public/45.avif'
 type Props = {}
 
+// dark:https://codepen.io/samritha/details/RwKwXZb
+
 function Player({}: Props) {
   return (
     <section
