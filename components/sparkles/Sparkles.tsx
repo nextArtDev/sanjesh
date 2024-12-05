@@ -5,6 +5,7 @@
 import { useEffect, useId, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
+import { useTheme } from 'next-themes'
 
 interface SparklesProps {
   className?: string
@@ -17,7 +18,9 @@ interface SparklesProps {
   direction?: string
   opacitySpeed?: number
   minOpacity?: number | null
-  color?: string
+  //   color?: string
+  lightThemeColor?: string
+  darkThemeColor?: string
   mousemove?: boolean
   hover?: boolean
   background?: string
@@ -35,7 +38,9 @@ export function Sparkles({
   direction = '',
   opacitySpeed = 3,
   minOpacity = null,
-  color = '#ffffff',
+  //   color = '#ffffff',
+  lightThemeColor = '#ffffff',
+  darkThemeColor = '#ffffff',
   mousemove = false,
   hover = false,
   background = 'transparent',
@@ -43,7 +48,8 @@ export function Sparkles({
   options = {},
 }: SparklesProps) {
   const [isReady, setIsReady] = useState(false)
-
+  const { theme } = useTheme()
+  //   console.log({ theme })
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine)
@@ -94,7 +100,7 @@ export function Sparkles({
     },
     particles: {
       color: {
-        value: color,
+        value: theme === 'light' ? lightThemeColor : darkThemeColor,
       },
       move: {
         enable: true,
