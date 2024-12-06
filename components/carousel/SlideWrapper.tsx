@@ -3,6 +3,7 @@ import { EmblaOptionsType } from 'embla-carousel'
 import Carousel, { SliderContainer, Slider, SliderDotButton } from './Carousel'
 import Image from 'next/image'
 import { slides } from './AutoCarousel'
+import Meteors from '../Meteors'
 // import { imgPreview } from '@/components/website/constant'
 
 type Props = {}
@@ -10,10 +11,7 @@ type Props = {}
 function SlideWrapper({}: Props) {
   const OPTIONS: EmblaOptionsType = {
     loop: true,
-    watchDrag: false,
-    watchResize: false,
-    watchSlides: false,
-    watchFocus: false,
+
     axis: 'x',
 
     dragFree: false,
@@ -26,12 +24,13 @@ function SlideWrapper({}: Props) {
       //   boxShadow: '11px 11px 39px #949494, -11px -11px 22px #ffffff',
       // }}
     >
-      <div className="absolute w-full h-full top-0 left-0 inset-0 bg-transparent   z-10 " />
+      {/* <div className="absolute w-full h-full top-0 left-0 inset-0 bg-transparent   z-10 " /> */}
       <Carousel options={OPTIONS} isAutoPlay={true} className="   ">
         <SliderContainer className="gap-4  ">
           {slides.map((slide, i) => (
             <Slider key={i} className="p-4 w-full mx-auto">
-              <div className="grid grid-cols-1 place-content-center place-items-center gap-8 md:grid-cols-2 ">
+              <Meteors number={30} />
+              <div className="z-10 grid grid-cols-1 place-content-center place-items-center gap-8 md:grid-cols-2 ">
                 <div className="flex flex-col gap-2">
                   <button className="text-[#b3ff00] text-2xl px-4 py-2 rounded-md shadow-[inset_11px_11px_39px_#949494,-11px_-11px_39px_#ffffff] dark:shadow-[5px_5px_25px_#ffffff15,-5px_-5px_5px_#e7e7e742]">
                     عنوان خدمتی
@@ -47,7 +46,7 @@ function SlideWrapper({}: Props) {
                   </figure>
                 </div>
                 <div className="w-[80%] mx-auto max-w-md ">
-                  <p className="text-xl text-foreground/80 px-4 py-2 rounded-md font-semibold   shadow-[inset_11px_11px_39px_#949494,-11px_-11px_39px_#ffffff] dark:shadow-[5px_5px_25px_#ffffff15,-5px_-5px_5px_#e7e7e742]">
+                  <p className="text-xl  text-right text-foreground/80 px-4 py-2 rounded-md font-semibold  text-balance shadow-[inset_11px_11px_39px_#949494,-11px_-11px_39px_#ffffff] dark:shadow-[5px_5px_25px_#ffffff15,-5px_-5px_5px_#e7e7e742]">
                     {slide.text}
                   </p>
                 </div>
