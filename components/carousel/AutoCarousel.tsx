@@ -15,30 +15,38 @@ export const slides = [
   {
     id: 1,
     image: '/45.avif',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorem, maxime distinctio rerum iure, ipsum amet blanditiis aspernatur accusamus placeat optio at. Velit amet inventore nemo corporis. Animi, rerum commodi.',
+    text: 'به کودکانی استثنایی گفته می‌شود که بر خلاف اکثریت افراد هم سن خود در شرایط عادی قادر به سازگاری با محیط نباشند و از نظر فکری، عقلانی، رفتاری و عاطفی با هم سالان خود فرق کلی داشته باشند و روش های خاص آموزش و پرورش درباره آن ها به کار رود. ',
     link: '',
   },
   {
     id: 2,
     image: '/globe.svg',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorem, maxime distinctio rerum iure, ipsum amet blanditiis aspernatur accusamus placeat optio at. Velit amet inventore nemo corporis. Animi, rerum commodi.',
+    text: 'به کودکانی استثنایی گفته می‌شود که بر خلاف اکثریت افراد هم سن خود در شرایط عادی قادر به سازگاری با محیط نباشند و از نظر فکری، عقلانی، رفتاری و عاطفی با هم سالان خود فرق کلی داشته باشند و روش های خاص آموزش و پرورش درباره آن ها به کار رود. ',
     link: '',
   },
   {
     id: 3,
     image: '/45.avif',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorem, maxime distinctio rerum iure, ipsum amet blanditiis aspernatur accusamus placeat optio at. Velit amet inventore nemo corporis. Animi, rerum commodi.',
+    text: 'به کودکانی استثنایی گفته می‌شود که بر خلاف اکثریت افراد هم سن خود در شرایط عادی قادر به سازگاری با محیط نباشند و از نظر فکری، عقلانی، رفتاری و عاطفی با هم سالان خود فرق کلی داشته باشند و روش های خاص آموزش و پرورش درباره آن ها به کار رود. ',
     link: '',
   },
   {
     id: 4,
     image: '/globe.svg',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorem, maxime distinctio rerum iure, ipsum amet blanditiis aspernatur accusamus placeat optio at. Velit amet inventore nemo corporis. Animi, rerum commodi.',
+    text: 'به کودکانی استثنایی گفته می‌شود که بر خلاف اکثریت افراد هم سن خود در شرایط عادی قادر به سازگاری با محیط نباشند و از نظر فکری، عقلانی، رفتاری و عاطفی با هم سالان خود فرق کلی داشته باشند و روش های خاص آموزش و پرورش درباره آن ها به کار رود. ',
     link: '',
   },
 ]
 function AutoCarousel() {
-  const OPTIONS: EmblaOptionsType = { loop: true }
+  const OPTIONS: EmblaOptionsType = {
+    loop: true,
+    // watchDrag: false,
+    // watchResize: false,
+    // watchSlides: false,
+    // watchFocus: false,
+    // axis: 'x',
+    // direction: 'rtl',
+  }
 
   return (
     <>

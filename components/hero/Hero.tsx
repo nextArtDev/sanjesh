@@ -10,7 +10,7 @@ type Props = {}
 
 function Hero({}: Props) {
   return (
-    <section className="w-full h-full flex flex-col items-center justify-center">
+    <section className="mx-auto w-full max-w-[98vw] px-4 md:px-12 py-24 h-full flex flex-col items-center justify-center">
       <article className="flex flex-col gap-8">
         <APLogo className="mx-auto w-[20%]" />
         <HeroSvg className="  pr-5" />
@@ -18,7 +18,7 @@ function Hero({}: Props) {
           ناحیه یک اهواز
         </h2>
       </article>
-      <div className="animate-pulse relative mt-20 h-80 w-full  overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] before:absolute before:inset-0 dark:before:bg-[radial-gradient(circle_at_bottom_center,#b3ff00,transparent_90%)] before:bg-[radial-gradient(circle_at_bottom_center,#1122ff,transparent_90%)]  before:opacity-40 after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[10%] after:border-t after:border-background after:bg-background">
+      {/* <div className="animate-pulse relative mt-20 h-80 w-full  overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] before:absolute before:inset-0 dark:before:bg-[radial-gradient(circle_at_bottom_center,#b3ff00,transparent_90%)] before:bg-[radial-gradient(circle_at_bottom_center,#1122ff,transparent_90%)]  before:opacity-40 after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[10%] after:border-t after:border-background after:bg-background">
         <Sparkles
           density={800}
           speed={1.2}
@@ -30,9 +30,11 @@ function Hero({}: Props) {
           lightThemeColor="#3945f5"
           className="absolute inset-x-0 bottom-0 h-full w-full "
         />
-      </div>
+      </div> */}
       {/* <AutoCarousel /> */}
+
       <SlideWrapper />
+
       {/* <article dir="ltr" className="relative w-full h-full mx-auto">
         <ShadCarousel />
       </article> */}
