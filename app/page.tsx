@@ -1,5 +1,6 @@
 import ShadCarousel from '@/components/carousel/ShadCarousel'
 import CustomBtn from '@/components/custom-btn/CustomBtn'
+import Features from '@/components/features/Features'
 import Hero from '@/components/hero/Hero'
 import { ModeToggle } from '@/components/mode-toggle'
 import Player from '@/components/player'
@@ -14,6 +15,7 @@ export default function Home() {
       </section>
       <Hero />
 
+      <Features />
       {/* <button className="signin-button">Sign in </button> */}
       <Player />
     </div>
