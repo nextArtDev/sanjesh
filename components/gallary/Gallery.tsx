@@ -17,10 +17,7 @@ function Gallery({}: Props) {
   return (
     <div>
       <div className="max-w-[80vw] my-20 mx-auto">
-        <section
-          className={cn('[columns:"200px"] ', style.gallery)}
-          id="gallery"
-        >
+        <section className={cn(' ', style.gallery)} id="gallery">
           {galleryImages.map((item) => (
             <figure
               key={item.id}

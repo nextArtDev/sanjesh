@@ -18,7 +18,7 @@ function Features({}: Props) {
       {items.map((item) => (
         <div
           key={item.id}
-          className="nev-btn hover:grayscale-[1] h-[200px] p-4 pt-8 flex flex-col items-center justify-center gap-1.5"
+          className="nev-btn hover:grayscale-[1] h-[200px]  p-8 flex flex-col items-center justify-center gap-1.5"
         >
           <p className="text-center text-base md:text-lg opacity-75 font-semibold ">
             {item.name}

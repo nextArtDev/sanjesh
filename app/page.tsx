@@ -19,7 +19,7 @@ export default function Home() {
       <Features />
       <Gallery />
       {/* <button className="signin-button">Sign in </button> */}
-      <Player />
+      {/* <Player /> */}
     </div>
   )
 }
