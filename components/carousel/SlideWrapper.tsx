@@ -47,7 +47,7 @@ function SlideWrapper({}: Props) {
                   </figure>
                 </div>
                 <div className="w-[80%] mx-auto max-w-md ">
-                  <p className="text-xl  text-right text-foreground/80 px-4 py-2 rounded-md font-semibold  text-balance shadow-[inset_4px_4px_6px_-1px_rgba(0,0,0,0.2),inset_-4px_-4px_6px_-1px_rgba(255,255,255,0.7),-0.5px_-0.5px_0px_rgba(255,255,255,1),0.5px_0.5px_0px_rgba(0,0,0,0.15),0px_12px_10px_-10px_rgba(0,0,0,0.05)] dark:shadow-[3px_3px_6px_rgba(0,0,0,0.5),_-1px_-1px_4px_rgba(255,255,255,0.5),inset_3px_3px_6px_rgba(0,0,0,0.5),inset_-1px_-1px_4px_rgba(255,255,255,0.5)]">
+                  <p className="text-base  text-right text-foreground/80 px-4 py-2 rounded-md font-semibold  text-balance shadow-[inset_4px_4px_6px_-1px_rgba(0,0,0,0.2),inset_-4px_-4px_6px_-1px_rgba(255,255,255,0.7),-0.5px_-0.5px_0px_rgba(255,255,255,1),0.5px_0.5px_0px_rgba(0,0,0,0.15),0px_12px_10px_-10px_rgba(0,0,0,0.05)] dark:shadow-[3px_3px_6px_rgba(0,0,0,0.5),_-1px_-1px_4px_rgba(255,255,255,0.5),inset_3px_3px_6px_rgba(0,0,0,0.5),inset_-1px_-1px_4px_rgba(255,255,255,0.5)]">
                     {slide.text}
                   </p>
                 </div>

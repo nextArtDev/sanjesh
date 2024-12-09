@@ -6,13 +6,16 @@ function Footer({}: Props) {
   return (
     <section className="">
       <footer className="w-full h-full  border-t   shadow-[-2px_-2px_4px_0px_#fff,20px_20px_50px_0px_rgba(0,0,0,25)] dark:shadow-[-2px_-2px_4px_0px_#ffffff25,20px_20px_50px_0px_rgba(0,0,0,8)] ">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="flex flex-col gap-8  items-center justify-center  md:flex-row md:items-center md:justify-between">
+        <div className="w-full max-w-[90vw] mx-auto p-4 md:py-8">
+          <div className="flex flex-col gap-8  items-center justify-center  md:flex-row md:items-center md:justify-around">
             <div className="flex flex-col gap-4 items-center mb-4 px-1.5 py-3 rounded-md sm:mb-0 space-x-3 rtl:space-x-reverse shadow-[-6px_-6px_8px_rgba(255,255,255,0.9),5px_5px_8px_rgba(0,0,0,0.07)] dark:shadow-[-6px_-6px_8px_rgba(255,255,255,0.3),5px_5px_8px_rgba(0,0,0,0.8)]">
               <h2 className="self-start rounded-md px-2 py-4  text-2xl font-semibold whitespace-nowrap  shadow-[-6px_-6px_8px_rgba(255,255,255,0.9),5px_5px_8px_rgba(0,0,0,0.07)] dark:shadow-[-6px_-6px_8px_rgba(255,255,255,0.3),5px_5px_8px_rgba(0,0,0,0.8)]">
                 مرکز جامع سنجش اهواز
               </h2>
-              <p> اهواز، منطقه یک، خیابان 12،</p>
+              <span className="flex flex-col gap-2">
+                <p> اهواز، منطقه یک، خیابان 12 </p>
+                <p> 0916000000 - 064000000</p>
+              </span>
             </div>
             {/* <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
@@ -96,10 +99,13 @@ function Footer({}: Props) {
             </article>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{' '}
+          <span
+            dir="ltr"
+            className="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >
+            © {new Date().getFullYear()}{' '}
             <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+              Saeid
             </a>
             . All Rights Reserved.
           </span>
